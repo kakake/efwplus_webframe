@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A61DA61B-1DA2-4614-A0EB-4634193695F6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EFWWeb</RootNamespace>
+    <AssemblyName>EFWWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Intelligencia.UrlRewriter, Version=2.0.0.6, Culture=neutral, PublicKeyToken=0573f3650687980d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Intelligencia.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.PolicyInjection, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.5.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NVelocity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\RazorEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\EFWCoreLib.dll" />
+    <Content Include="bin\EFWWeb.dll" />
+    <Content Include="bin\EFWWeb.pdb" />
+    <Content Include="bin\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="bin\Intelligencia.UrlRewriter.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Caching.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll" />
+    <Content Include="bin\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="bin\Microsoft.Practices.Unity.Configuration.dll" />
+    <Content Include="bin\Microsoft.Practices.Unity.dll" />
+    <Content Include="bin\Microsoft.Practices.Unity.Interception.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\NPOI.dll" />
+    <Content Include="bin\NVelocity.dll" />
+    <Content Include="bin\RazorEngine.dll" />
+    <Content Include="bin\RazorEngine.xml" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.xml" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.xml" />
+    <Content Include="bin\WebUIFrame.dll" />
+    <Content Include="bin\WebUIFrame.pdb" />
+    <Content Include="Config\rewrite.xml" />
+    <Content Include="ModulePlugin\Books_Web\Aspx\Books.aspx" />
+    <Content Include="ModulePlugin\Books_Web\Aspx\Hello.aspx" />
+    <Content Include="ModulePlugin\Books_Web\JS\Books.js" />
+    <Content Include="ModulePlugin\Books_Web\JS\Hello.js" />
+    <Content Include="ModulePlugin\IotPlatform\Aspx\index_iot.aspx" />
+    <Content Include="ModulePlugin\IotPlatform\JS\index_iot.js" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\defaultlogin\center-plugin.js" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\defaultlogin\jquery.js" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\defaultlogin\login.html" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\defaultlogin\login.js" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\defaultlogin\skin11\click.gif" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\defaultlogin\skin11\click2.gif" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\defaultlogin\skin11\login_bottom.jpg" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\defaultlogin\skin11\login_centerleft.jpg" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\defaultlogin\skin11\login_centerright.jpg" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\defaultlogin\skin11\login_top.jpg" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\defaultlogin\skin11\style.css" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\defaultlogin\skin11\title.png" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\css\default.css" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\css\maineasyui.css" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\css\zh-cn-system.css" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\images\icon_use.png" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\images\lockscreen.png" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\images\nav_bg.png" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\images\panel_title.png" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\images\panel_tool_collapse.gif" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\images\panel_tool_expand.gif" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\images\tabicons.png" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\images\报告.png" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\images\设置.png" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\Login-debug.aspx" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\Login-debug.js" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\Main.aspx" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\Main.js" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\task.aspx" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\DeptEmployeeManager.aspx" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\DeptManager.aspx" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\EmployeeManager.aspx" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\login.html" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\LogOff.aspx" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\main.html" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\MenuManage.aspx" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\metronic\index.aspx" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\metronic\login.html" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\SetPassWord.aspx" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\task.aspx" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\UserMenuManager.aspx" />
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\WorkerSetup.aspx" />
+    <Content Include="ModulePlugin\WebUIFrame\index-debug.html" />
+    <Content Include="ModulePlugin\WebUIFrame\index.html" />
+    <Content Include="ModulePlugin\WebUIFrame\JS\DeptEmployeeManager.js" />
+    <Content Include="ModulePlugin\WebUIFrame\JS\DeptManager.js" />
+    <Content Include="ModulePlugin\WebUIFrame\JS\EmployeeManager.js" />
+    <Content Include="ModulePlugin\WebUIFrame\JS\GroupMenuManager.js" />
+    <Content Include="ModulePlugin\WebUIFrame\JS\MenuManage.js" />
+    <Content Include="ModulePlugin\WebUIFrame\JS\WorkerSetup.js" />
+    <Content Include="userfiles\营销.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="index-debug.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\pluginsys.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="index.html" />
+    <Content Include="WebPlugin\bootstrap\js\bootstrap.min.js" />
+    <Content Include="WebPlugin\jquery-1.8.0.min.js" />
+    <Content Include="WebPlugin\jquery-easyui-1.4.2\jquery.easyui.min.js" />
+    <Content Include="WebPlugin\jquery.json-2.3.min.js" />
+    <Content Include="WebPlugin\jquery.query-2.1.7.js" />
+    <Content Include="WebPlugin\JQueryCommon2.0.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Report\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModulePlugin\WebUIFrame\Aspx\default\defaultlogin\skin11\title.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EFWCoreLib\EFWCoreLib.csproj">
+      <Project>{c5a8c124-18c0-43f4-b5a2-0f71bb833e82}</Project>
+      <Name>EFWCoreLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebUIFrame\WebUIFrame.csproj">
+      <Project>{d780897a-2d34-4830-b98e-eed04dfc8acf}</Project>
+      <Name>WebUIFrame</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\实例Books\Books_Web\Books_Web.csproj">
+      <Project>{bea499ca-7c8a-420a-87ed-a50e1f6d4c58}</Project>
+      <Name>Books_Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\物联网平台\IotPlatform\IotPlatform.csproj">
+      <Project>{07fa3f61-19f3-49e4-8166-1b3b54375415}</Project>
+      <Name>IotPlatform %28物联网平台\IotPlatform%29</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53950</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

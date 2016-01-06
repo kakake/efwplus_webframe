@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="unity" type="Microsoft.Practices.Unity.Configuration.UnityConfigurationSection, Microsoft.Practices.Unity.Configuration, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <section name="plugin" type="EFWCoreLib.CoreFrame.Plugin.PluginSectionHandler, EFWCoreLib" />
+  </configSections>
+  <unity>
+    <container>
+    </container>
+  </unity>
+  <plugin name="WebUIFrame" version="1.3" title="Web通用权限管理" author="kakake" plugintype="Web" defaultdbkey="SQL2005" defaultcachekey="Cache Manager" isentry="1">
+    <baseinfo>
+      <data key="introduction" value="这是一个Web通用权限框架插件程序" />
+      <data key="updaterecord" value="1.增加了metronic风格的主界面" />
+      <data key="headpic" value="/ModulePlugin/efwplus_website/headpic/default.png" />
+      <data key="isdebug" value="false" />
+      <data key="StartItem" value="ModulePlugin/WebUIFrame/index.html" />
+      <data key="menuconfig" value="ModulePlugin\WebUIFrame\menus.xml" />
+    </baseinfo>
+    <businessinfo>
+      <dll name="WebUIFrame.dll" version="1.0" />
+    </businessinfo>
+    <issue>
+      <add type="dir" path="Aspx" source="" />
+      <add type="dir" path="JS" source="" />
+      <add type="dir" path="dll" source="" />
+      <add type="dir" path="SqlScript" source="" />
+      <add type="file" path="dll/WebUIFrame.dll" source="../../bin/WebUIFrame.dll" />
+      <add type="file" path="plugin.xml" source="" />
+      <add type="file" path="menus.xml" source="" />
+      <add type="file" path="index.html" source="" />
+      <add type="file" path="index-debug.html" source="" />
+    </issue>
+    <setup>
+      <add type="file" path="dll/WebUIFrame.dll" copyto="../../bin/WebUIFrame.dll" />
+      <add type="sql" path="SqlScript/createtables.sql" copyto="" />
+    </setup>
+    <menus>
+      <add menuname="启动页面" pluginname="" controllername="" viewname="" menupath="index.html" memo="" />
+      <add menuname="机构管理" pluginname="" controllername="" viewname="" menupath="ModulePlugin/WebUIFrame/Aspx/WorkerSetup.aspx" memo="" />
+      <add menuname="人员部门管理" pluginname="" controllername="" viewname="" menupath="ModulePlugin/WebUIFrame/Aspx/DeptEmployeeManager.aspx" memo="" />
+      <add menuname="系统菜单管理" pluginname="" controllername="" viewname="" menupath="ModulePlugin/WebUIFrame/Aspx/MenuManage.aspx" memo="" />
+      <add menuname="用户权限管理" pluginname="" controllername="" viewname="" menupath="ModulePlugin/WebUIFrame/Aspx/UserMenuManager.aspx" memo="" />
+    </menus>
+  </plugin>
+</configuration>

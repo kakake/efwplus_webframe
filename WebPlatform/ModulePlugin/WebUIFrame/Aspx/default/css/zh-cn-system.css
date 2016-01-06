@@ -1,0 +1,57 @@
+body{color:#444; height:100%}a{text-decoration:none; color:#444}
+html.on,html.on body{background: #e2e9ea; background-image:none;}
+html.addbg,html.addbg body{background:#e2e9ea}
+a:hover{text-decoration:underline;}
+.pad-6{padding:6px; overflow:hidden}.pad-10{padding:10px; overflow:hidden}.pad_10,.pad-lr-10{padding:0 10px}.pad-lr-6{padding:0 6px}
+.hr hr{display:none}
+.border-none,.border-none-td td,{border:none}
+.ib, .ib-li li, .ib-a a, .ib-span span,.common-form ul li span.text,.fixed-bottom .fixed-but .button,.arrowhead,.arrowhead-b,#Skin li,.shortcut a,.shortcut a span,.picBut a,.tab-use,.scroll a{display:inline-block;zoom:1;*display:inline;}
+.cut_line span{ color:#fff; padding:0 4px; font-family:"宋体";}
+.mr6{margin-right:6px}.mr8{margin-right:8px}.mr10{margin-right:10px}.mb6{margin-bottom:6px}.mb8{margin-bottom:8px}.mb10{margin-bottom:10px}
+.line-x{border-bottom:1px solid #eee;}
+.title-1{border-bottom:1px solid #eee; padding-left:5px}
+.title-2{text-align:left;height:34px;*height:33px;font:18px/31px "MicroSoft YaHei","SimHei";color:#333;*line-height:33px; margin:0; padding:8px 0 3px 0px}
+body fieldset{border:1px solid #D8D8D8; padding:10px;}
+body fieldset legend{padding:3px 8px;font-weight:700;border:1px solid #D8D8D8;background-color: #F9F9F9;}
+body fieldset.blue{border:1px solid #dce3ed}
+body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; background:none; border:none}
+.fixed-bottom{height:60px;_margin-top:12px}
+.fixed-bottom .fixed-but .button{padding:0 0 0 10px; margin:0; margin:0 5px}
+.fixed-bottom .fixed-but .button input{padding-right:10px; margin:0;background-position: right top; display:block;color:#004092; font-size:14px; font-weight:700; white-space: nowrap;}
+.subnav{ padding:10px}.subnav h2{ margin-bottom:6px}
+.explain-col{ border:1px solid #ffbe7a;zoom:1; background: #fffced; padding:8px 10px; line-height:20px}
+
+/*头部*/
+.header {background:#3a6ea5 url(../images/h_bg.png) repeat-x left bottom; height:90px; position:relative}
+.header .logo{float:left;width:180px;height:90px;margin-right:10px;_margin-right:7px;}
+.header .logo a{display:block;height:90px;text-decoration: none;}
+.header .rt-col{position:absolute;top:0px; right:0px; height:44px; z-index:10;color:#fff;}
+.header .rt-col a{color:#fff;}
+.header .nav{ display:block; height:34px; position:relative; bottom:12px;padding-right:10px;}
+.header .col-auto{overflow:visible;float:none;}
+.header .nav li,
+	.header .nav li a{background: url(../images/nav_bg.png) no-repeat;display:block;_float:left;height:34px;font:14px/24px "宋体"; line-height:38px; font-weight:700;color:#fff;}
+	.header .nav li{float:right;padding:0 0 0 8px}
+	.header .nav li a{background-position: right top; padding:0 15px 0 7px}
+	.header .nav li.on{background-position: left -43px;}
+	.header .nav li.on a{background-position: right -43px; color:#367abb;}
+	.header .nav li.tab_web{ position:relative}
+	.header .nav li.tab_web a{ position:absolute;}
+	.header .nav li.tab_web a,
+	.header .nav li.tab_web{background:none; line-height:38px; vertical-align:middle; padding:0;}
+	.header .nav li.tab_web a{padding:0;padding-left:10px;cursor: hand;!important;cursor: pointer;white-space: nowrap;}
+	.header .nav li.tab_web a:hover,.header .nav li.tab_web a.on{text-decoration: none;color:#3a6ea5;background-position: left -40px; }
+	.header .nav li.tab_web a span{ display:block; padding-right:24px;background-position:right 2px;}
+	.header .nav li.tab_web a:hover span,.header .nav li.tab_web a.on span{background-position:right -40px;}
+
+	.tab-web-panel{ border:1px solid #b3cbe4;zoom:1; padding:1px; background:#fff}
+	.tab-web-panel li{background:#f0f5f6; margin-top:1px}
+	
+	.tab-web-panel li a{padding:3px 8px 3px 8px;display:block; padding-right:22px;height:18px;line-height:18px;white-space: nowrap;width:105px}
+	.tab-web-panel li a:hover,.tab-web-panel li.on a{ background-color:#d5e5f6;background-position:50px -52px;}
+	
+.header .col-auto{height:100px}
+.header .log{padding:16px 0 0 6px; height:20px}
+.header .tab_style{padding:16px 14px 0 0}
+.home {font-size:12px; vertical-align:middle; font-weight:normal;color:#10418c;BACKGROUND: url(../images/icon_use.png) no-repeat;line-height:22px;padding-left: 35px; padding-top:5px;height:30px;}
+.home a{font-size:12px; font-weight:normal; color:#10418c; font-family:"宋体";}

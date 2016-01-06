@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Web控制器调试</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/WebPlugin/jquery-easyui/themes/default/easyui.css"/>
+	<link rel="stylesheet" type="text/css" href="/WebPlugin/jquery-easyui/themes/icon.css"/>
+	<script type="text/javascript" src="/WebPlugin/jquery-easyui/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="/WebPlugin/jquery-easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="/WebPlugin/jquery-easyui/locale/easyui-lang-zh_CN.js"></script>
+    <style>
+    .header {
+	    PADDING-RIGHT: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 5px; PADDING-BOTTOM: 5px; OVERFLOW: hidden; PADDING-TOP: 5px; BORDER-BOTTOM: #e4e4e4 1px solid; ZOOM: 1
+    }
+    .tip_warn {
+	    BORDER-RIGHT: #ff3 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #ff3 1px solid; PADDING-LEFT: 5px; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 5px; BORDER-LEFT: #ff3 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #ff3 1px solid; BACKGROUND-COLOR: #ffc
+    }
+    .c_tx3 {
+	    COLOR: #666
+    }
+    .button {
+	    BORDER-RIGHT: 0px; PADDING-RIGHT: 7px; BORDER-TOP: 0px; PADDING-LEFT: 7px; FONT-WEIGHT: bold; FONT-SIZE: 14px; PADDING-BOTTOM: 3px; BORDER-LEFT: 0px; COLOR: #fff; MARGIN-RIGHT: 10px; PADDING-TOP: 3px; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: #7db463
+    }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $('#txtcName').combobox('reload','Controller.aspx?controller=DebugController&method=GetControllerClassNameData');
+            
+            $('#txtcName').combobox('options').onSelect=function(record){
+                $('#txtmName').combobox('reload','Controller.aspx?controller=DebugController&method=GetControllerMethodNameData&ClassName='+$('#txtcName').combobox('getText'));
+            }
+            
+            $('#txtmName').combobox('options').onSelect=function(record){
+                $('#txtajaxurl').val('Controller.aspx?controller='+$('#txtcName').combobox('getText')+'&method='+$('#txtmName').combobox('getText'));
+            }
+        });
+        
+        function SubmitUrl(){
+            $.ajax({
+                type: "POST",
+                url: $('#txtajaxurl').val(),
+                //data: requestData,
+                success: function(msg) {
+                    $('#txtresult').val(msg);
+                }
+            });
+        }
+    </script>
+</head>
+<body class="easyui-layout" border="false">
+<div region="center" style="overflow:hidden; padding-left:50px; padding-top:5px" border="false">
+     <div class="header">
+         <h1>
+             Web控制器调试工具</h1>
+         <!--a href="##" title="登录" class="login_links">登录</a-->
+     </div>
+     <div class="tip_warn">
+         此工具旨在帮助开发者检测发送的请求参数是否正确，提交相关信息后可获得服务器的验证结果 
+     </div>
+     <div class="remark c_tx3">
+         使用说明：<br />
+         （1）在下拉框中选择HTTP请求参数。<br />
+         （2）在文本框中填写请求对应的参数（格式请参考文本框中的示例）。<br />
+         （3）点击“请求”按钮，即可获取请求结果。 
+     </div>
+     <table>
+     <tr><td><label>选择控制器</label></td><td><input id="txtcName" class="easyui-combobox"  style="width:200px;" valueField="code" textField="Name" required="true" /></td></tr>
+     <tr><td><label>选择方法名</label></td><td><input id="txtmName" class="easyui-combobox"  style="width:200px;" valueField="code" textField="Name" required="true" /></td></tr>
+     
+     <tr><td valign="top"><label>完整的请求地址：</label></td><td><textarea id="txtajaxurl" style="width:500px; height:50px;font-size:12px;"></textarea></td></tr>
+     <tr><td></td><td><INPUT class=button onclick=SubmitUrl() type=button value=请求></td></tr>
+     <tr><td valign="top"><label>返回结果</label></td><td><textarea id="txtresult" style="width:500px; height:250px;font-size:12px"></textarea></td></tr>
+     </table>
+</div>
+</body>
+</html>
