@@ -1,0 +1,84 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFWWeb", "WebPlatform\EFWWeb.csproj", "{A61DA61B-1DA2-4614-A0EB-4634193695F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFWCoreLib", "EFWCoreLib\EFWCoreLib.csproj", "{C5A8C124-18C0-43F4-B5A2-0F71BB833E82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUIFrame", "WebUIFrame\WebUIFrame.csproj", "{D780897A-2D34-4830-B98E-EED04DFC8ACF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "appconfig", "appconfig", "{F82C8213-A2BD-424E-8671-C52EDFF04D56}"
+	ProjectSection(SolutionItems) = preProject
+		WebPlatform\Config\pluginsys.xml = WebPlatform\Config\pluginsys.xml
+		WebPlatform\Config\rewrite.xml = WebPlatform\Config\rewrite.xml
+		WebPlatform\Web.config = WebPlatform\Web.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pluginconfig", "pluginconfig", "{F85CA87C-10D7-4B30-8801-1CFE3BC54D67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "webuiframe", "webuiframe", "{715D1D34-97E0-49A1-86F6-41EF2A55F6A4}"
+	ProjectSection(SolutionItems) = preProject
+		WebPlatform\ModulePlugin\WebUIFrame\menus.xml = WebPlatform\ModulePlugin\WebUIFrame\menus.xml
+		WebPlatform\ModulePlugin\WebUIFrame\plugin.xml = WebPlatform\ModulePlugin\WebUIFrame\plugin.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "实例Books", "实例Books", "{AE852C5C-9FB9-4D3B-8E99-D230F7C468C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlScript", "SqlScript", "{D0174C5E-CD23-4C5D-AE11-8CFFECC1D585}"
+	ProjectSection(SolutionItems) = preProject
+		SqlScript\createtables.sql = SqlScript\createtables.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "books", "books", "{7C4263E0-B86D-4B14-9D09-E6A1794C08CB}"
+	ProjectSection(SolutionItems) = preProject
+		WebPlatform\ModulePlugin\Books_Web\plugin.xml = WebPlatform\ModulePlugin\Books_Web\plugin.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Books_Web", "实例Books\Books_Web\Books_Web.csproj", "{BEA499CA-7C8A-420A-87ED-A50E1F6D4C58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "物联网平台", "物联网平台", "{22C98A09-CE04-4505-8F25-C9FEB456F6D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IotPlatform", "物联网平台\IotPlatform\IotPlatform.csproj", "{07FA3F61-19F3-49E4-8166-1B3B54375415}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iotplatform", "iotplatform", "{390ACC5A-D82E-4280-862A-FDBCC40F0F87}"
+	ProjectSection(SolutionItems) = preProject
+		WebPlatform\ModulePlugin\IotPlatform\plugin.xml = WebPlatform\ModulePlugin\IotPlatform\plugin.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A61DA61B-1DA2-4614-A0EB-4634193695F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A61DA61B-1DA2-4614-A0EB-4634193695F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A61DA61B-1DA2-4614-A0EB-4634193695F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A61DA61B-1DA2-4614-A0EB-4634193695F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5A8C124-18C0-43F4-B5A2-0F71BB833E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5A8C124-18C0-43F4-B5A2-0F71BB833E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5A8C124-18C0-43F4-B5A2-0F71BB833E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5A8C124-18C0-43F4-B5A2-0F71BB833E82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D780897A-2D34-4830-B98E-EED04DFC8ACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D780897A-2D34-4830-B98E-EED04DFC8ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D780897A-2D34-4830-B98E-EED04DFC8ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D780897A-2D34-4830-B98E-EED04DFC8ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEA499CA-7C8A-420A-87ED-A50E1F6D4C58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA499CA-7C8A-420A-87ED-A50E1F6D4C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA499CA-7C8A-420A-87ED-A50E1F6D4C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA499CA-7C8A-420A-87ED-A50E1F6D4C58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07FA3F61-19F3-49E4-8166-1B3B54375415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07FA3F61-19F3-49E4-8166-1B3B54375415}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07FA3F61-19F3-49E4-8166-1B3B54375415}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07FA3F61-19F3-49E4-8166-1B3B54375415}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{715D1D34-97E0-49A1-86F6-41EF2A55F6A4} = {F85CA87C-10D7-4B30-8801-1CFE3BC54D67}
+		{7C4263E0-B86D-4B14-9D09-E6A1794C08CB} = {F85CA87C-10D7-4B30-8801-1CFE3BC54D67}
+		{390ACC5A-D82E-4280-862A-FDBCC40F0F87} = {F85CA87C-10D7-4B30-8801-1CFE3BC54D67}
+		{BEA499CA-7C8A-420A-87ED-A50E1F6D4C58} = {AE852C5C-9FB9-4D3B-8E99-D230F7C468C7}
+		{07FA3F61-19F3-49E4-8166-1B3B54375415} = {22C98A09-CE04-4505-8F25-C9FEB456F6D2}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sysmenu>
+  <modules>
+    <module ModuleId="2" Name="系统设置管理">
+    </module>
+    <module ModuleId="11" Name="efwplus实例">
+    </module>
+  </modules>
+  <menus>
+    <menu ModuleId="2" MenuId="1" PMenuId="-1" Name="人员部门" DllName="" FunName="" MenuToolBar="0" MenuLookBar="0" Image="" UrlId="" UrlName="">
+    </menu>
+    <menu ModuleId="2" MenuId="2" PMenuId="1" Name="机构管理" DllName="" FunName="" MenuToolBar="0" MenuLookBar="0" Image="" UrlId="" UrlName="ModulePlugin/WebUIFrame/Aspx/WorkerSetup.aspx">
+    </menu>
+    <menu ModuleId="2" MenuId="3" PMenuId="1" Name="人员部门管理" DllName="" FunName="" MenuToolBar="0" MenuLookBar="0" Image="" UrlId="" UrlName="ModulePlugin/WebUIFrame/Aspx/DeptEmployeeManager.aspx">
+    </menu>
+    <menu ModuleId="2" MenuId="4" PMenuId="-1" Name="权限设置" DllName="" FunName="" MenuToolBar="0" MenuLookBar="0" Image="" UrlId="" UrlName="">
+    </menu>
+    <menu ModuleId="2" MenuId="5" PMenuId="4" Name="系统菜单管理" DllName="" FunName="" MenuToolBar="0" MenuLookBar="0" Image="" UrlId="" UrlName="ModulePlugin/WebUIFrame/Aspx/MenuManage.aspx">
+    </menu>
+    <menu ModuleId="2" MenuId="6" PMenuId="4" Name="用户权限管理" DllName="" FunName="" MenuToolBar="0" MenuLookBar="0" Image="" UrlId="" UrlName="ModulePlugin/WebUIFrame/Aspx/UserMenuManager.aspx">
+    </menu>
+    <menu ModuleId="11" MenuId="7" PMenuId="-1" Name="实例程序" DllName="" FunName="" MenuToolBar="0" MenuLookBar="0" Image="" UrlId="" UrlName="">
+    </menu>
+    <menu ModuleId="11" MenuId="8" PMenuId="7" Name="WebRight01" DllName="" FunName="" MenuToolBar="0" MenuLookBar="0" Image="" UrlId="" UrlName="ModulePlugin/WebRight01/Aspx/Hello.aspx">
+    </menu>
+  </menus>
+</sysmenu>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pluginsys>
+  <WebComponentPlugin>
+  </WebComponentPlugin>
+  <WebModulePlugin>
+    <Plugin name="WebUIFrame" path="ModulePlugin/WebUIFrame/plugin.xml" title="Web通用权限管理" isdevelopment="1" />
+    <Plugin name="Books_Web" path="ModulePlugin/Books_Web/plugin.xml" title="Books_Web" isdevelopment="1" />
+    <Plugin name="IotPlatform" path="ModulePlugin/IotPlatform/plugin.xml" title="物联网平台" isdevelopment="1" />
+  </WebModulePlugin>
+  <WinformModulePlugin>
+  </WinformModulePlugin>
+  <WcfModulePlugin>
+  </WcfModulePlugin>
+</pluginsys>

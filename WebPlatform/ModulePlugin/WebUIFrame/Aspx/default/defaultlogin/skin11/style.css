@@ -1,0 +1,144 @@
+html{
+	overflow:hidden;
+}
+body{
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	line-height: 100%;
+	height: 100%;
+	border:0;
+	text-align: left;
+	background-color:#2273b4;/*主体背景色*/
+}
+form{
+	margin: 0;
+	padding: 0;
+}
+.clear{
+	clear:both;
+	line-height:1px;
+}
+.login_main{
+	width: 1006px;/*登录面板宽度*/
+	margin: 0 auto;
+	background-color: #2273b4;/*登录面板背景色*/
+	text-align: left;
+	position:relative;
+}
+.login_top{
+	width: 100%;
+	height: 265px;/*登录面板头部高度*/
+	background-image: url(login_top.jpg);
+	background-repeat: no-repeat;
+}
+.login_middle{
+	width: 100%;
+	height: 196px;/*登录面板中部高度*/
+}
+.login_middleleft{
+	float: left;
+	width: 503px;/*登录面板中部左侧宽度*/
+	height: 100%;
+	background-image: url(login_centerleft.jpg);
+	background-repeat: no-repeat;
+}
+.login_middlecenter{
+	float: left;
+	width: 503px;/*登录面板中部右侧宽度*/
+	height: 100%;
+	background-image: url(login_centerright.jpg);
+	background-repeat: no-repeat;
+	text-align: left;
+}
+.login_bottom{
+	width: 100%;
+	height: 219px;/*登录面板底部高度*/
+	background-image: url(login_bottom.jpg);
+	background-repeat: no-repeat;
+}
+.login_title{
+	position:absolute;
+	left:240px;/*标题x坐标*/
+	top:180px;/*标题y坐标*/
+	width:455px;/*标题宽度*/
+	height:58px;/*标题高度*/
+	background-image: url(title.png);
+	background-repeat: no-repeat;
+}
+.letter_space{
+letter-spacing:1em;
+}
+.login_user{
+	padding:0 0 0 0px;
+	font-weight:bold;
+	color:#ffffff;/*表单文字颜色*/
+}
+.login_pass{
+	padding:15px 0 0 0px;/*密码框距用户名框的垂直距离*/
+	font-weight:bold;
+	color:#ffffff;/*表单文字颜色*/
+}
+.login_form{
+	padding:48px 0 0 60px;/*表单位置*/
+}
+.login_button input{
+	width: 66px;/*按钮宽度*/
+	height: 26px;/*按钮高度*/
+	background-image: url(click.gif);
+	background-color:transparent;
+	border:0;
+	cursor:pointer;
+	cursor:hand;
+}
+.login_user input{
+	border:solid 1px #2a96e6;/*用户名框边框色*/
+	background-color:#ffffff;/*用户名框背景色*/
+	width:150px;/*用户名框宽度*/
+	height:18px;
+	line-height:18px;
+}
+.login_pass input{
+	border:solid 1px #2a96e6;/*密码框边框色*/
+	background-color:#ffffff;/*密码框背景色*/
+	width:150px;/*密码框宽度*/
+	height:18px;
+	line-height:18px;
+}
+.login_button_left{
+	position:absolute;
+	left:535px;/*提交按钮x坐标*/
+	top:410px;/*提交按钮y坐标*/
+}
+.login_button_right{
+	position:absolute;
+	left:622px;/*重置按钮x坐标*/
+	top:410px;/*重置按钮y坐标*/
+}
+.login_copyright{
+	color:#ffffff;/*版权声明文字颜色*/
+	text-align:center;
+	width:100%;
+	padding:120px  0 0 0;/*版权声明位置*/
+}
+.login_info{
+	color:red;
+	position:absolute;
+	left:600px;/*提示信息x坐标*/
+	top:460px;/*提示信息y坐标*/
+	line-height:150%;
+	width:240px;
+	overflow:hidden;
+}
+.login_skin{
+	position:absolute;
+	right:10px;
+	bottom:10px;
+	color:#ffffff;/*皮肤管理文字颜色*/
+	height:30px;
+	line-height:30px;
+}
+.login_skin span{
+	cursor:pointer;
+	cursor:hand;
+}

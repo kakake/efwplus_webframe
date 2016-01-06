@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rewriteRules>
+  <rewrite url="~/efwplus/index"
+         to="~/ModulePlugin/efwplus_website/index.html"
+         processing="stop" />
+  <rewrite url="~/efwplus/Docs/(.+)"
+        to="~/ModulePlugin/efwplus_website/Docs/$1"
+        processing="stop" />
+
+  <rewrite url="~/efwplus/PluginController-PluginCenter/(.+)/(.+)"
+           to="~/ModulePlugin/efwplus_website/templatefile/Controller.aspx?controller=efwplus_website@PluginController&amp;method=PluginCenter&amp;ptype=$1&amp;filterchar=$2"
+           processing="stop" />
+  <rewrite url="~/efwplus/PluginController-PluginCenter/(.+)"
+           to="~/ModulePlugin/efwplus_website/templatefile/Controller.aspx?controller=efwplus_website@PluginController&amp;method=PluginCenter&amp;ptype=$1&amp;filterchar="
+           processing="stop" />
+  <rewrite url="~/efwplus/PluginController-PluginCenter"
+           to="~/ModulePlugin/efwplus_website/templatefile/Controller.aspx?controller=efwplus_website@PluginController&amp;method=PluginCenter&amp;ptype=-1&amp;filterchar="
+           processing="stop" />
+  
+  
+  <rewrite url="~/efwplus/PluginController-PluginDetail/(.+)"
+           to="~/ModulePlugin/efwplus_website/templatefile/Controller.aspx?controller=efwplus_website@PluginController&amp;method=PluginDetail&amp;id=$1"
+           processing="stop" />
+
+  <rewrite url="~/efwplus/(.+)/(.+)"
+        to="~/ModulePlugin/efwplus_website/templatefile/$1/$2"
+        processing="stop" />
+  
+  <rewrite url="~/efwplus/(.+)-(.+)"
+           to="~/ModulePlugin/efwplus_website/templatefile/Controller.aspx?controller=efwplus_website@$1&amp;method=$2"
+           processing="stop" />
+</rewriteRules>
